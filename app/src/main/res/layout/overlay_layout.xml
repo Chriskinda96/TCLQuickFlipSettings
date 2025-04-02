@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:padding="16dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">  <ImageButton
+        android:id="@+id/btn_wifi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:src="@drawable/ic_wifi_on"
+        android:padding="12dp"
+        app:tint="@color/white"
+        android:contentDescription="Wi-Fi Toggle" />
+
+        <ImageButton
+            android:id="@+id/btn_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_mobile_data_on"
+            android:padding="12dp"
+            app:tint="@color/white"
+            android:contentDescription="Mobile Data Toggle" />
+
+        <ImageButton
+            android:id="@+id/btn_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_location_on"
+            android:padding="12dp"
+            app:tint="@color/white"
+            android:contentDescription="Location Toggle" />
+
+        <ImageButton
+            android:id="@+id/btn_bluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_bluetooth_on"
+            android:padding="12dp"
+            app:tint="@color/white"
+            android:contentDescription="Bluetooth Toggle" />
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/drag_handle"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#888888"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
