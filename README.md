@@ -10,6 +10,8 @@ Requirements:
 
 ADB debugging.
 
+Instructions:
+
 1. Install the APK.
 2. Grant permissions with this command: "adb shell pm grant com.chriskinda.qs android.permission.SYSTEM_ALERT_WINDOW"
 3. Open the app. Grant accessibility permissions.
